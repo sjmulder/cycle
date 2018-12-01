@@ -1,0 +1,31 @@
+.Dd December 1, 2018
+.Dt CYCLE 1
+.Os
+.Sh NAME
+.Nm cycle
+.Nd repeat a file or stream forever
+.Sh SYNOPSIS
+.Nm
+.Sh DESCRIPTION
+.Nm
+copies standard input to standard output, repeating forever.
+The input is buffered to a temporary file if it does not support seeking.
+.Sh EXAMPLES
+Repeat a stream:
+.Bd -literal -offset indent
+$ echo test | cycle
+test
+test
+^C
+.Ed
+.Pp
+Repeat a file:
+.Dl $ cycle <foo.txt
+.Pp
+Repeat multiple files:
+.Dl $ cat foo.txt bar.txt | cycle
+.Sh SEE ALSO
+.Lk https://github.com/sjmulder/cycle Website
+.Sh AUTHORS
+.An Sijmen J. Mulder
+.Aq Mt ik@sjmulder.nl
