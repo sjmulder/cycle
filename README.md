@@ -1,5 +1,9 @@
 cycle
 =====
+[![Build status](
+ https://builds.sr.ht/~sjmulder/cycle.svg)](
+ https://builds.sr.ht/~sjmulder/cycle)
+
 Repeat a file or stream forever.
 
 ... | **cycle** | ...
