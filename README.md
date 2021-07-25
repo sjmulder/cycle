@@ -1,6 +1,5 @@
 cycle
 =====
-
 Repeat a file or stream forever.
 
 ... | **cycle** | ...
@@ -8,14 +7,12 @@ Repeat a file or stream forever.
 
 Description
 -----------
-
 **cycle** copies standard input to standard output, repeating forever. The
 input is buffered to a temporary file if it does not support seeking.
 
 
 Examples
 --------
-
 Repeat a stream:
 
     $ echo test | cycle
@@ -32,10 +29,8 @@ Repeat multiple files:
 
     $ cat foo.txt bar.txt | cycle
 
-
 Running
 -------
-
 Should work with any Unix, including Linux and macOS.
 
 Mac users can install from
@@ -49,10 +44,8 @@ To compile, install and uninstall from source:
     make install   [DESTDIR=] [PREFIX=/usr/local] [MANPREFIX=PREFIX/man]
     make uninstall [DESTDIR=] [PREFIX=/usr/local] [MANPREFIX=PREFIX/man]
 
-
 Legal
 -----
-
 Copyright (c) 2018, Sijmen J. Mulder (<ik@sjmulder.nl>)
 
 cycle is free software: you can redistribute it and/or modify it under
